@@ -1,0 +1,17 @@
+add a server 
+add a switch below server 
+add 3 pc to three sides of switch 
+connect server to switch and pc's to switch
+config server ip(click server ->config ->interface)
+ip address 192.168.1.10
+subnet mask 255.255.255.0
+configure pc's
+go to pc cmd and ping 192.168.1.10
+
+optional 
+click server-> services->http
+turn: http:on (left side buttons clicked )
+now from pc 
+desktop->web browser
+type 192.168.1.10
+server webpage will open
