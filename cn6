@@ -1,0 +1,28 @@
+add router 2901
+add a pc 
+connect them 
+
+(config pc) 
+ip- 192.168.1.2
+subnet- 255.255.255.0
+def gateway- 192.168.1.1
+
+(router cli)
+enable 
+configure terminal
+hostname R1
+enable password class
+line console 0
+password cisco
+login
+exit
+interface gigabitethernet0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+(you should see
+interface changed state to up)
+exit
+(make sure you see R1#)
+write
+
+ping from pc - ping 192.168.1.1
