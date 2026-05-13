@@ -1,0 +1,21 @@
+add a switch 2960
+add a pc
+connect both
+(config pc)
+ip -192.168.1.2
+subnet mask-255.255.255.0
+def gateway-192.168.1.1
+
+(config switch)
+enable 
+configure terminal
+hostname Switch1
+enable password class
+line console 0
+password cisco
+login
+exit
+write
+
+
+ping pc - 192.168.1.1
