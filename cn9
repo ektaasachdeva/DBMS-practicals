@@ -1,0 +1,28 @@
+add a 2960 switch
+add router 2901
+add pc 
+connect pc to switch and switch to router
+(configure pcs) 
+ip - 192.168.1.2
+subnet mask -255.255.255.0
+default gateway- 192.168.1.1
+
+(configure router ->cli)
+enable
+configure terminal
+interface gigabitethernet0/0 
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+(state up)
+exit
+line vty 0 4
+password cisco
+login
+transport input telnet
+end
+
+
+test ping 192.168.1.1 on pc cmd then 
+telnet 192.168.1.1
+password: cisco
+(now you have remotely accessed the router)
