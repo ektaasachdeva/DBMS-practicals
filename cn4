@@ -1,0 +1,25 @@
+bus 
+add 4 servers one by one 
+then add 4 pc below servers connect servers one by one then pc to servers
+then add config<br> then ping 
+
+ring
+add 4 switches in square
+then add a pc to each server connect all servers then pc to server
+then add config<br> then ping 
+
+tree
+add a switch 
+add 2 switches below(right and left)
+add 3 pc to each 2nd level server 
+then add config<br> then ping 
+
+hybrid
+add 5 switches in line(bus) then 3 servers below 3rd server in diamond shape (ring)
+add pc to every server 
+then add config<br> then ping 
+
+mesh 
+add 4 switch in ring the a pc to each server then connect each server to every other server 
+then add config<br> then ping 
+
